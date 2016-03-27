@@ -1,0 +1,25 @@
+{
+  "name": "nodecasts.io",
+  "version": "0.0.1",
+  "description": "The website for nodecasts.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nodecasts-io/site.git"
+  },
+  "keywords": [
+    "node",
+    "video",
+    "tutorial",
+    "site"
+  ],
+  "author": "Jon Kuperman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nodecasts-io/site/issues"
+  },
+  "homepage": "https://github.com/Nodecasts-io/site#readme"
+}
