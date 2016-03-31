@@ -3,3 +3,9 @@ html
     title= title
   body
     h1= message
+    ul
+      for entry in series
+        li #{entry.name}
+        ul
+          for foo in entry.videos
+            p #{foo.title}
