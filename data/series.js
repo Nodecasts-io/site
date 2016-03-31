@@ -64,7 +64,7 @@ module.exports = [
   {
     id: 2,
     name: "Immutable.js",
-    image: "immutable_js.png",
+    image: "immutable_js.jpg",
     videos: [
       {
         title: "Introduction to Immutable.js",
@@ -83,7 +83,7 @@ module.exports = [
   {
     id: 3,
     name: "Don't worry, be Hapi",
-    image: "hapijs.png",
+    image: "hapijs.jpg",
     videos: [
       {
         title: "Introduction to Hapi.js",

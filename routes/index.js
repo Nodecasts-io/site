@@ -5,6 +5,7 @@ const router  = express.Router()
 router.get('/', (req, res, next) => {
   const entries = series.map((entry) => {
     return {
+      id:    entry.id,
       title: entry.name,
       image: entry.image,
       count: entry.videos.length

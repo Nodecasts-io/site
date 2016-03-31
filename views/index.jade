@@ -4,10 +4,16 @@ html
     link(href='/css/bootstrap.min.css', rel='stylesheet')
     link(href='/css/style.css', rel='stylesheet')
   body
-    h1= message
-    ul
-      for entry in entries
-        li
-          span
-            img(src="/img/" + entry.image)
-            span #{entry.title} #{entry.count}
+    div.row
+      div.col-md-10.col-md-offset-1
+        h1= message
+        div.row
+          for entry in entries
+            div.col-md-3
+              div.thumbnail
+                a(href="/series/" + entry.id)
+                  img(src="/img/" + entry.image)
+                div.caption
+                  a(href="/series/" + entry.id)
+                    h5 #{entry.title}
+                  p #{entry.count} videos
