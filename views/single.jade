@@ -1,0 +1,13 @@
+html
+  head
+    title= title
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/css/style.css', rel='stylesheet')
+  body
+    div.row
+      div.col-md-10.col-md-offset-1
+        h1= message
+        img(src="/img/" + entry.image)
+        div.list-group
+          for video in entry.videos
+            a.list-group-item(href="/video/" + video.id) #{video.title}
