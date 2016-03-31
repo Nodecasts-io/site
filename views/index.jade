@@ -1,7 +1,8 @@
 html
   head
     title= title
-    script(src='https://cdn.firebase.com/js/client/2.2.1/firebase.js')
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/css/style.css', rel='stylesheet')
   body
     h1= message
     ul
@@ -10,4 +11,3 @@ html
           span
             img(src="/img/" + entry.image)
             span #{entry.title} #{entry.count}
-          
