@@ -22,5 +22,7 @@
     "url": "https://github.com/Nodecasts-io/site/issues"
   },
   "homepage": "https://github.com/Nodecasts-io/site#readme",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
