@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Nodecasts-io/site#readme",
   "dependencies": {
     "express": "^4.13.4",
+    "gcloud": "^0.29.0",
     "jade": "^1.11.0"
   }
 }

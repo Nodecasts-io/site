@@ -1,5 +1,6 @@
 module.exports = [
   {
+    id: 0,
     name: "Mastering Chrome DevTools",
     videos: [
       {
@@ -17,6 +18,7 @@ module.exports = [
     ]
   },
   {
+    id: 1,
     name: "JavaScript ES6",
     videos: [
       {
@@ -58,6 +60,7 @@ module.exports = [
     ]
   },
   {
+    id: 2,
     name: "Immutable.js",
     videos: [
       {
@@ -75,6 +78,7 @@ module.exports = [
     ]
   },
   {
+    id: 3,
     name: "Don't worry, be Hapi",
     videos: [
       {

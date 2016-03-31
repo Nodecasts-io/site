@@ -1,11 +1,9 @@
 html
   head
     title= title
+    script(src='https://cdn.firebase.com/js/client/2.2.1/firebase.js')
   body
     h1= message
     ul
-      for entry in series
-        li #{entry.name}
-        ul
-          for foo in entry.videos
-            p #{foo.title}
+      for entry in entries
+        li #{entry.title} #{entry.count}
