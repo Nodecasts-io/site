@@ -2,6 +2,7 @@ module.exports = [
   {
     id: 0,
     name: "Mastering Chrome DevTools",
+    image: "chrome_devtools.jpg",
     videos: [
       {
         title: "Advanced Chrome DevTools",
@@ -20,6 +21,7 @@ module.exports = [
   {
     id: 1,
     name: "JavaScript ES6",
+    image: "javascript_es6.jpg",
     videos: [
       {
         title: "JavaScript ES6 - Introduction",
@@ -62,6 +64,7 @@ module.exports = [
   {
     id: 2,
     name: "Immutable.js",
+    image: "immutable_js.png",
     videos: [
       {
         title: "Introduction to Immutable.js",
@@ -80,6 +83,7 @@ module.exports = [
   {
     id: 3,
     name: "Don't worry, be Hapi",
+    image: "hapijs.png",
     videos: [
       {
         title: "Introduction to Hapi.js",

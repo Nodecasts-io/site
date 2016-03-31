@@ -6,6 +6,7 @@ router.get('/', (req, res, next) => {
   const entries = series.map((entry) => {
     return {
       title: entry.name,
+      image: entry.image,
       count: entry.videos.length
     }
   })

@@ -6,4 +6,8 @@ html
     h1= message
     ul
       for entry in entries
-        li #{entry.title} #{entry.count}
+        li
+          span
+            img(src="/img/" + entry.image)
+            span #{entry.title} #{entry.count}
+          
