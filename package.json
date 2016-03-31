@@ -22,8 +22,5 @@
     "url": "https://github.com/Nodecasts-io/site/issues"
   },
   "homepage": "https://github.com/Nodecasts-io/site#readme",
-  "dependencies": {
-    "hapi": "^13.2.2",
-    "inert": "^3.2.0"
-  }
+  "dependencies": {}
 }
