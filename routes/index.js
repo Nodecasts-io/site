@@ -8,7 +8,7 @@ const router  = express.Router()
 router.get('/', (req, res, next) => {
   const entries = [];
 
-  youtube.playlists.list(config, function(err, playlists) {
+  youtube.playlists.list(config, (err, playlists) => {
     playlists.items.forEach((item) => {
       entries.push({
         id: item.id,
