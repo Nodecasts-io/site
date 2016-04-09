@@ -11,9 +11,9 @@ html
           for entry in entries
             div.col-md-3
               div.thumbnail
-                a(href="/series/" + entry.id)
+                a(href="/playlist/" + entry.id)
                   img(src=entry.thumbnail)
                 div.caption
-                  a(href="/series/" + entry.id)
+                  a(href="/playlist/" + entry.id)
                     h5 #{entry.title}
                   p #{entry.count} videos
