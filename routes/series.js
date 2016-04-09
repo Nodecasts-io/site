@@ -1,5 +1,4 @@
 const express = require('express')
-const series  = require(__dirname + '/../data/series.js')
 const router  = express.Router()
 
 router.get('/:id', (req, res, next) => {

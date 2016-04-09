@@ -1,21 +1,29 @@
+const google  = require('googleapis')
+const youtube = google.youtube('v3')
 const express = require('express')
-const series  = require(__dirname + '/../data/series.js')
+const config  = require('../config')
 const router  = express.Router()
 
-router.get('/', (req, res, next) => {
-  const entries = series.map((entry) => {
-    return {
-      id:    entry.id,
-      title: entry.name,
-      image: entry.image,
-      count: entry.videos.length
-    }
-  })
 
-  res.render('index', {
-    title: 'Nodecasts',
-    message: 'Welcome to Nodecasts',
-    entries: entries
+router.get('/', (req, res, next) => {
+  const entries = [];
+
+  youtube.playlists.list(config, function(err, playlists) {
+    playlists.items.forEach((item) => {
+      entries.push({
+        id: item.id,
+        title: item.snippet.localized.title,
+        description: item.snippet.localized.description,
+        count: item.contentDetails.itemCount,
+        thumbnail: item.snippet.thumbnails.standard.url
+      })
+    })
+
+    res.render('index', {
+      title: 'Nodecasts',
+      message: 'Our Series',
+      entries: entries
+    })
   })
 })
 
