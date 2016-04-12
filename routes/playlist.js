@@ -4,7 +4,7 @@ const express = require('express')
 const config  = require('../config')
 const router  = express.Router()
 
-router.get('/:id', (req, res, next) => {
+router.get('/:id', (req, res) => {
   const videos = []
 
   // Get config object ready for this request

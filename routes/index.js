@@ -5,7 +5,7 @@ const config  = require('../config')
 const router  = express.Router()
 
 
-router.get('/', (req, res, next) => {
+router.get('/', (req, res) => {
   const entries = [];
 
   youtube.playlists.list(config, (err, playlists) => {

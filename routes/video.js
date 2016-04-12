@@ -1,10 +1,11 @@
+
 const google  = require('googleapis')
 const youtube = google.youtube('v3')
 const express = require('express')
 const config  = require('../config')
 const router  = express.Router()
 
-router.get('/:id', (req, res, next) => {
+router.get('/:id', (req, res) => {
   const vids = []
 
   // Get config object ready for this request
