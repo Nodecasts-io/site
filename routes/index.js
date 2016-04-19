@@ -1,15 +1,20 @@
-const google  = require('googleapis')
-const youtube = google.youtube('v3')
-const express = require('express')
-const config  = require('../config')
-const router  = express.Router()
+const google   = require('googleapis')
+const youtube  = google.youtube('v3')
+const express  = require('express')
+const config   = require('../config')
+const featured = require('../data/featured_playlists.js')
+const router   = express.Router()
 
 
 router.get('/', (req, res) => {
   const entries = [];
 
   youtube.playlists.list(config, (err, playlists) => {
-    playlists.items.forEach((item) => {
+    playlists.items
+      .filter((item) => {
+        return (featured.indexOf(item.id) != -1)
+      })
+      .forEach((item) => {
       entries.push({
         id: item.id,
         title: item.snippet.localized.title,
@@ -21,7 +26,7 @@ router.get('/', (req, res) => {
 
     res.render('index', {
       title: 'Nodecasts',
-      message: 'Our Series',
+      message: 'Featured Series',
       entries: entries
     })
   })

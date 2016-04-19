@@ -6,6 +6,10 @@ h1, h2, h3, h4, h5 {
   font-weight: 900;
 }
 
+#container {
+  padding: 0;
+}
+
 .Header {
   background: url('/img/background.png') no-repeat;
   background-size: cover;
@@ -34,4 +38,42 @@ h1, h2, h3, h4, h5 {
 
 .Header-content {
   margin-top: 129px;
+}
+
+.fancy-title, .fancy-subtitle {
+  text-align: center;
+  font-size: 25px;
+  margin: 25px 0;
+}
+
+.fancy-subtitle {
+  position: relative;
+  margin: 25px 0 -25px;
+}
+
+.fancy-subtitle span {
+  color: #03A9F4;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 13px;
+  position: relative;
+}
+
+.fancy-subtitle span:before, .fancy-subtitle span:after {
+  content: "";
+  position: absolute;
+  border-top: 3px solid #d7d7c6;
+  width: 100px;
+  height: 3px;
+  top: 50%;
+}
+
+.fancy-subtitle span:before {
+  right: 100%;
+  margin-right: 40px;
+}
+
+.fancy-subtitle span:after {
+  left: 100%;
+  margin-left: 40px;
 }
