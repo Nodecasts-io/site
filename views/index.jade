@@ -1,19 +1,26 @@
-html
-  head
-    title= title
-    link(href='/css/bootstrap.min.css', rel='stylesheet')
-    link(href='/css/style.css', rel='stylesheet')
-  body
+extends ./layout.jade
+
+block content
+  header.Header
     div.row
-      div.col-md-10.col-md-offset-1
-        h1= message
-        div.row
-          for entry in entries
-            div.col-md-3
-              div.thumbnail
+      div.col-sm-6.col-sm-offset-3
+        h1 Nodecasts
+        h2 Level up!
+        
+        p Premium quality screencasts, updated weekly. Covering Node.js, JavaScript and Web Performance!
+        
+        div
+          i.fa.fa-arrow-circle-down(aria-hidden="true")
+  div.row
+    div.col-md-10.col-md-offset-1
+      h1= message
+      div.row
+        for entry in entries
+          div.col-md-3
+            div.thumbnail
+              a(href="/playlist/" + entry.id)
+                img(src=entry.thumbnail)
+              div.caption
                 a(href="/playlist/" + entry.id)
-                  img(src=entry.thumbnail)
-                div.caption
-                  a(href="/playlist/" + entry.id)
-                    h5 #{entry.title}
-                  p #{entry.count} videos
+                  h5 #{entry.title}
+                p #{entry.count} videos

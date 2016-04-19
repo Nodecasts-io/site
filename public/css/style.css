@@ -1,0 +1,36 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 900;
+}
+
+.Header {
+  background: url('/img/background.png') no-repeat;
+  background-size: cover;
+  color: #FFF;
+  height: 500px;
+}
+
+.Header .navbar-default .navbar-brand {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.Header h1 {
+  font-size: 75px;
+}
+
+.Header h2 {
+  font-size: 50px;
+}
+
+.Header p {
+  font-size: 20px;
+}
+
+.Header .navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
