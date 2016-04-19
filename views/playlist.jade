@@ -7,6 +7,8 @@ html
     div.row
       div.col-md-10.col-md-offset-1
         h1= message
+        h3= description
+        img(src=featuredImage)
         div.list-group
           for video in videos
             a.list-group-item(href="/video/" + video.id) #{video.title}
