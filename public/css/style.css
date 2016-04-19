@@ -19,18 +19,19 @@ h1, h2, h3, h4, h5 {
 }
 
 .Header h1 {
-  font-size: 75px;
-}
-
-.Header h2 {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .Header p {
   font-size: 20px;
+  line-height: 40px;
 }
 
 .Header .navbar-default {
   background-color: transparent;
   border-color: transparent;
+}
+
+.Header-content {
+  margin-top: 129px;
 }

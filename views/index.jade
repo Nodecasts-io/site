@@ -3,14 +3,13 @@ extends ./layout.jade
 block content
   header.Header
     div.row
-      div.col-sm-6.col-sm-offset-3
-        h1 Nodecasts
-        h2 Level up!
+      div.col-sm-6.col-sm-offset-3.Header-content
+        h1 Nodecasts. Level up.
         
         p Premium quality screencasts, updated weekly. Covering Node.js, JavaScript and Web Performance!
         
-        div
-          i.fa.fa-arrow-circle-down(aria-hidden="true")
+        button.btn.btn-raised.btn-info(type="button") Get Started  
+          i.fa.fa-arrow-right(aria-hidden="true")
   div.row
     div.col-md-10.col-md-offset-1
       h1= message
