@@ -29,6 +29,7 @@ router.get('/:id', (req, res) => {
       featuredImage = playlist.items[0].snippet.thumbnails.standard.url
 
       playlist.items.map((item) => {
+        console.log(item)
         videos.push({
           id: item.contentDetails.videoId,
           title: item.snippet.title,

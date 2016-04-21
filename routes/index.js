@@ -2,20 +2,22 @@ const google   = require('googleapis')
 const youtube  = google.youtube('v3')
 const express  = require('express')
 const config   = require('../config')
-const featured = require('../data/featured_playlists.js')
 const router   = express.Router()
+const featuredPlaylists = require('../data/featured_playlists.js')
+const featuredVideos    = require('../data/featured_videos.js').join(', ')
 
 
 router.get('/', (req, res) => {
-  const entries = [];
+  const playlists = []
+  const videos    = []
 
-  youtube.playlists.list(config, (err, playlists) => {
-    playlists.items
+  youtube.playlists.list(config, (err, result) => {
+    result.items
       .filter((item) => {
-        return (featured.indexOf(item.id) != -1)
+        return (featuredPlaylists.indexOf(item.id) != -1)
       })
       .forEach((item) => {
-      entries.push({
+      playlists.push({
         id: item.id,
         title: item.snippet.localized.title,
         description: item.snippet.localized.description,
@@ -24,11 +26,25 @@ router.get('/', (req, res) => {
       })
     })
 
-    res.render('index', {
-      title: 'Nodecasts',
-      message: 'Featured Series',
-      entries: entries
+    config.id = featuredVideos
+
+    youtube.videos.list(config, (err, result) => {
+      result.items
+        .forEach((item) => {
+          videos.push({
+            id: item.id,
+            title: item.snippet.localized.title,
+            thumbnail: item.snippet.thumbnails.standard.url
+          })
+        })
+
+        res.render('index', {
+          title: 'Nodecasts',
+          playlists: playlists,
+          videos: videos
+        })
     })
+
   })
 })
 
