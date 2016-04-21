@@ -1,8 +1,8 @@
 const google   = require('googleapis')
 const youtube  = google.youtube('v3')
 const express  = require('express')
-const config   = require('../config')
 const router   = express.Router()
+const defaultConfig     = require('../config')
 const featuredPlaylists = require('../data/featured_playlists.js')
 const featuredVideos    = require('../data/featured_videos.js').join(', ')
 
@@ -10,6 +10,11 @@ const featuredVideos    = require('../data/featured_videos.js').join(', ')
 router.get('/', (req, res) => {
   const playlists = []
   const videos    = []
+
+  let config = Object.assign({
+    part: 'snippet,contentDetails',
+    playlistId: req.params.id
+  }, defaultConfig)
 
   youtube.playlists.list(config, (err, result) => {
     result.items
@@ -26,7 +31,11 @@ router.get('/', (req, res) => {
       })
     })
 
-    config.id = featuredVideos
+    config = Object.assign({
+      part: 'snippet,contentDetails',
+      id: featuredVideos,
+      maxResults: 4
+    }, defaultConfig)
 
     youtube.videos.list(config, (err, result) => {
       result.items

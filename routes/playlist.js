@@ -1,9 +1,9 @@
-const google  = require('googleapis')
-const youtube = google.youtube('v3')
-const express = require('express')
-const config  = require('../config')
-const featured = require('../data/featured_playlists.js')
-const router  = express.Router()
+const express       = require('express')
+const google        = require('googleapis')
+const router        = express.Router()
+const youtube       = google.youtube('v3')
+const defaultConfig = require('../config')
+const featured      = require('../data/featured_playlists.js')
 
 router.get('/:id', (req, res) => {
   const videos = []
@@ -14,7 +14,10 @@ router.get('/:id', (req, res) => {
   }
 
   // Get config object ready for this request
-  config.playlistId = req.params.id
+  const config = Object.assign({
+    part: 'snippet,contentDetails',
+    playlistId: req.params.id
+  }, defaultConfig)
 
   youtube.playlists.list(config, (err, playlists) => {
     const series = playlists.items.filter((item) => {
@@ -29,7 +32,6 @@ router.get('/:id', (req, res) => {
       featuredImage = playlist.items[0].snippet.thumbnails.standard.url
 
       playlist.items.map((item) => {
-        console.log(item)
         videos.push({
           id: item.contentDetails.videoId,
           title: item.snippet.title,

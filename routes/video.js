@@ -1,16 +1,16 @@
-
-const google  = require('googleapis')
-const youtube = google.youtube('v3')
-const express = require('express')
-const config  = require('../config')
-const router  = express.Router()
+const express        = require('express')
+const google         = require('googleapis')
+const router         = express.Router()
+const youtube        = google.youtube('v3')
+const defaultConfig  = require('../config')
 
 router.get('/:id', (req, res) => {
   const vids = []
 
-  // Get config object ready for this request
-  config.id = req.params.id
-  config.part = 'player,snippet'
+  const config = Object.assign({
+    id: req.params.id,
+    part: 'player,snippet'
+  }, defaultConfig)
 
   youtube.videos.list(config, (err, videos) => {
     videos.items.map((video) => {
