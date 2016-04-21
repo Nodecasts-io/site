@@ -23,6 +23,7 @@ router.get('/:id', (req, res) => {
 
     res.render('video', {
       title: 'Nodecasts',
+      identifier: req.params.id,
       videos: vids
     })
   })

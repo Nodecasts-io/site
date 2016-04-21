@@ -8,3 +8,10 @@ block content
         h1= video.title
         h2= video.description
         div!= video.video
+        
+        div#disqus_thread
+        script(type="text/javascript").
+          var disqus_config = function () {
+            this.page.url = 'https://nodecasts.io'
+            this.page.identifier=!{JSON.stringify(identifier)}
+          };
