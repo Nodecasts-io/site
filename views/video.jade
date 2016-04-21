@@ -2,9 +2,9 @@ extends ./layout.jade
 
 block content
   include ./includes/navbar.jade
-    div.row
-      div.col-md-10.col-md-offset-1
-        for video in videos
-          h1= video.title
-          h2= video.description
-          div!= video.video
+  div.row
+    div.col-md-10.col-md-offset-1.Video
+      for video in videos
+        h1= video.title
+        h2= video.description
+        div!= video.video
