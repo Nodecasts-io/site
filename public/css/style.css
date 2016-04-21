@@ -92,3 +92,12 @@ img {
 .Email h2 {
   font-size: 40px;
 }
+
+.Playlist-Video {
+  cursor: pointer;
+}
+
+.Playlist-Video:hover {
+  background: #EEE;
+  font-weight: bold;
+}

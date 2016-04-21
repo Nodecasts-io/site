@@ -7,8 +7,8 @@ block content
       h1= message
       h3= description
       
-      div!= player
+      div#Player!= player
 
-      div.list-group.Playlist
+      ul.list-group.Playlist
         for video in videos
-          a.list-group-item(href="/video/" + video.id) #{video.title}
+          li.list-group-item.Playlist-Video(data-id=video.id) #{video.title}

@@ -29,4 +29,18 @@ router.get('/:id', (req, res) => {
   })
 })
 
+router.get('/getPlayer/:id', (req, res) => {
+
+  const config = Object.assign({
+    id: req.params.id,
+    part: 'player'
+  }, defaultConfig)
+
+  youtube.videos.list(config, (err, videos) => {
+    res.send(JSON.stringify({
+      video: videos.items[0].player.embedHtml
+    }))
+  })
+})
+
 module.exports = router
