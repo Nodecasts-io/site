@@ -3,13 +3,11 @@ extends ./layout.jade
 block content
   include ./includes/navbar.jade
   div.row
-    div.col-md-8.col-md-offset-2
-      div.row
-        div.col-md-3.col-md-offset-1
-          img(src=featuredImage)
-        div.col-md-8
-          h1= message
-          h3= description
+    div.col-md-8.col-md-offset-2.Video
+      h1= message
+      h3= description
+      
+      div!= player
 
       div.list-group
         for video in videos

@@ -7,14 +7,14 @@ const featured      = require('../data/featured_playlists.js')
 
 router.get('/:id', (req, res) => {
   const videos = []
-  let featuredImage, title, description
+  let title, description, player
 
   if (featured.indexOf(req.params.id) == -1) {
     return 'Error'
   }
 
   // Get config object ready for this request
-  const config = Object.assign({
+  let config = Object.assign({
     part: 'snippet,contentDetails',
     playlistId: req.params.id
   }, defaultConfig)
@@ -29,8 +29,6 @@ router.get('/:id', (req, res) => {
 
     youtube.playlistItems.list(config, (err, playlist) => {
 
-      featuredImage = playlist.items[0].snippet.thumbnails.standard.url
-
       playlist.items.map((item) => {
         videos.push({
           id: item.contentDetails.videoId,
@@ -39,12 +37,24 @@ router.get('/:id', (req, res) => {
         })
       })
 
-      res.render('playlist', {
-        title: 'Nodecasts',
-        message: title,
-        videos: videos,
-        description: description,
-        featuredImage: featuredImage
+      // Get config object ready for this request
+      config = Object.assign({
+        id: videos[0].id,
+        part: 'player'
+      }, defaultConfig)
+
+      youtube.videos.list(config, (err, vids) => {
+        player = vids.items.map((video) => {
+          return video.player.embedHtml
+        })
+
+        res.render('playlist', {
+          title: 'Nodecasts',
+          message: title,
+          videos: videos,
+          description: description,
+          player: player
+        })
       })
     })
   })

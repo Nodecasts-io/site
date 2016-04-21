@@ -1,5 +1,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  background: #EEE;
 }
 
 h1, h2, h3, h4, h5 {
@@ -80,4 +81,14 @@ img {
 .fancy-subtitle span:after {
   left: 100%;
   margin-left: 40px;
+}
+
+.Email {
+  background: #673AB7;
+  height: 300px;
+  color: #FFF;
+}
+
+.Email h2 {
+  font-size: 40px;
 }
