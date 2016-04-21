@@ -1,9 +1,7 @@
-html
-  head
-    title= title
-    link(href='/css/bootstrap.min.css', rel='stylesheet')
-    link(href='/css/style.css', rel='stylesheet')
-  body
+extends ./layout.jade
+
+block content
+  include ./includes/navbar.jade
     div.row
       div.col-md-10.col-md-offset-1
         for video in videos
