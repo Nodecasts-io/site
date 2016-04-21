@@ -9,6 +9,6 @@ block content
       
       div!= player
 
-      div.list-group
+      div.list-group.Playlist
         for video in videos
           a.list-group-item(href="/video/" + video.id) #{video.title}

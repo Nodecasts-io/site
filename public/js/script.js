@@ -20,3 +20,5 @@ $(window).resize(function() {
     $el.width(newWidth).height(newWidth * $el.data('aspectRatio'));
   });
 }).resize();
+
+$('.Playlist').find('.list-group-item').first().addClass('active')
