@@ -15,3 +15,11 @@ block content
             this.page.url = 'https://nodecasts.io'
             this.page.identifier=!{JSON.stringify(identifier)}
           };
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+
+          s.src = '//nodecastsio.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
