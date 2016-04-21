@@ -16,7 +16,8 @@ router.get('/:id', (req, res) => {
   // Get config object ready for this request
   let config = Object.assign({
     part: 'snippet,contentDetails',
-    playlistId: req.params.id
+    playlistId: req.params.id,
+    maxResults: 20
   }, defaultConfig)
 
   youtube.playlists.list(config, (err, playlists) => {
@@ -28,7 +29,6 @@ router.get('/:id', (req, res) => {
     description = series[0].snippet.description
 
     youtube.playlistItems.list(config, (err, playlist) => {
-
       playlist.items.map((item) => {
         videos.push({
           id: item.contentDetails.videoId,

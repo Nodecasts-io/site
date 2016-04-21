@@ -93,11 +93,11 @@ img {
   font-size: 40px;
 }
 
-.Playlist-Video {
+.Playlist-Video:not(.active) {
   cursor: pointer;
 }
 
-.Playlist-Video:hover {
+.Playlist-Video:not(.active):hover {
   background: #EEE;
-  font-weight: bold;
+  color: #333;
 }
