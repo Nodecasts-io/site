@@ -45,6 +45,10 @@ img {
   margin-top: 129px;
 }
 
+.Header .Course {
+  margin: 0 20px;
+}
+
 .fancy-title, .fancy-subtitle {
   text-align: center;
   font-size: 25px;
