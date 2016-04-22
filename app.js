@@ -1,10 +1,11 @@
 const express     = require('express')
 const compression = require('compression')
 const routes      = require('./routes/index')
+const search      = require('./routes/search')
 const video       = require('./routes/video')
-const videos       = require('./routes/videos')
+const videos      = require('./routes/videos')
 const playlist    = require('./routes/playlist')
-const playlists    = require('./routes/playlists')
+const playlists   = require('./routes/playlists')
 const app         = express()
 
 // Middleware
@@ -16,6 +17,7 @@ app.set('view engine', 'jade')
 app.use('/', routes)
 app.use('/video', video)
 app.use('/videos', videos)
+app.use('/search', search)
 app.use('/playlist', playlist)
 app.use('/courses', playlists)
 
