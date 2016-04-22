@@ -12,7 +12,7 @@ const app         = express()
 // Middleware
 app.use(compression())
 app.use(express.static('public'))
-app.set('view engine', 'jade')
+app.set('view engine', 'pug')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
