@@ -1,0 +1,11 @@
+extends ./layout.jade
+
+block content
+  include ./includes/navbar.jade
+  div.row
+    div.col-md-8.col-md-offset-2.Course
+      h1 All Courses
+
+      div.list-group
+        for video in videos
+          a.list-group-item(href='/playlist/' + video.id) #{video.title}

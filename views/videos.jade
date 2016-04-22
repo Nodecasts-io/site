@@ -1,0 +1,11 @@
+extends ./layout.jade
+
+block content
+  include ./includes/navbar.jade
+  div.row
+    div.col-md-8.col-md-offset-2.Video
+      h1 All Videos
+
+      ul.list-group.Playlist
+        for video in videos
+          li.list-group-item.Playlist-Video(data-id=video.id) #{video.title}
