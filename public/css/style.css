@@ -84,9 +84,10 @@ img {
 }
 
 .Email {
-  background: #673AB7;
-  height: 300px;
+  background: url('/img/background2.jpg');
+  background-size: cover;
   color: #FFF;
+  height: 300px;
 }
 
 .Email h2 {
@@ -100,4 +101,16 @@ img {
 .Playlist-Video:not(.active):hover {
   background: #EEE;
   color: #333;
+}
+
+.caption-subtitle {
+  height: 30px;
+}
+
+#mc_embed_signup {
+  margin-top: 50px;
+}
+
+#mce-EMAIL {
+  height: 60px;
 }

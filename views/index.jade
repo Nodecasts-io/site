@@ -43,54 +43,8 @@ block content
                     img(src=video.thumbnail)
                   div.caption
                     a(href="/video/" + video.id)
-                      h5 #{video.title}
-                    p #{video.count} videos
+                      h5.caption-subtitle #{video.title}
                     
   div.row.Email
     div.col-md-8.col-md-offset-2
-      div#mc_embed_signup
-        form(
-          action="//nodecasts.us12.list-manage.com/subscribe/post?u=8a372efa90d46915f6f53b7ca&amp;id=1a729bd298",
-          method="post",
-          id="mc-embedded-subscribe-form",
-          name="mc-embedded-subscribe-form",
-          class="validate",
-          target="_blank",
-          novalidate
-        )
-        div#mc_embed_signup_scroll
-          h2 Never miss an episode!
-          div.mc-field-group
-            label.hide(for="mce-EMAIL") Email Address
-            input(
-              type="email",
-              value="",
-              name="EMAIL",
-              class="required email form-control",
-              id="mce-EMAIL",
-              placeholder="Email Address"
-            )
-          div#mce-responses.clear
-            div.response#mce-error-response(style="display:none")
-            div.response#mce-success-response(style="display:none")
-          div(
-            style="position: absolute; left: -5000px;",
-            aria-hidden="true"
-          )
-            input(
-              type="text",
-              name="b_8a372efa90d46915f6f53b7ca_1a729bd298",
-              tabindex="-1",
-              value=""
-            )
-          div.clear
-            input(
-              type="submit",
-              value="Subscribe",
-              name="subscribe",
-              id="mc-embedded-subscribe",
-              class="button btn btn-info"
-            )
-      script(src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
-      script(type='text/javascript').
-        (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+      include includes/mailchimp.html
