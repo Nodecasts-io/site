@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   'V-txbAYtVVE',
   '8UsIexAY4NY',
   '0eSAsi3GPh4',
