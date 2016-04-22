@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Nodecasts-io/site#readme",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "compression": "^1.6.1",
     "express": "^4.13.4",
     "googleapis": "^4.0.0",

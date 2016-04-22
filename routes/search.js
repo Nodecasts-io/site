@@ -25,6 +25,7 @@ router.post('/', (req, res) => {
 
     res.render('results', {
       title: 'Nodecasts',
+      query: query,
       videos: vids
     })
   })

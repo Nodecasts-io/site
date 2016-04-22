@@ -1,5 +1,6 @@
 const express     = require('express')
 const compression = require('compression')
+const bodyParser  = require('body-parser')
 const routes      = require('./routes/index')
 const search      = require('./routes/search')
 const video       = require('./routes/video')
@@ -12,6 +13,9 @@ const app         = express()
 app.use(compression())
 app.use(express.static('public'))
 app.set('view engine', 'jade')
+
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 // Routes
 app.use('/', routes)
