@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
   const playlists = []
   const videos    = []
 
-  let config = Object.assign({
+  var config = Object.assign({
     part: 'snippet,contentDetails',
     playlistId: req.params.id
   }, defaultConfig)

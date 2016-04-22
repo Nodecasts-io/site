@@ -7,14 +7,14 @@ const featured      = require('../data/featured_playlists.js')
 
 router.get('/:id', (req, res) => {
   const videos = []
-  let title, description, player
+  var title, description, player
 
   if (featured.indexOf(req.params.id) == -1) {
     return 'Error'
   }
 
   // Get config object ready for this request
-  let config = Object.assign({
+  var config = Object.assign({
     part: 'snippet,contentDetails',
     playlistId: req.params.id,
     maxResults: 20
