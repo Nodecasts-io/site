@@ -1,10 +1,10 @@
 {
   extends: "eslint:recommended",
-  "parser": "babel-eslint",
   "env": {
     "browser": true,
     "node": true,
-    "jquery": true
+    "jquery": true,
+    "es6": true
   },
   "ecmaFeatures": {
     "blockBindings": true
