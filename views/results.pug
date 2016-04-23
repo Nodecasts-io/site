@@ -4,9 +4,9 @@ block content
   include ./includes/navbar.pug
   div.row
     div.col-md-8.col-md-offset-2.Video
-      h1 Results for 
+      h1 Results for
         span= query
 
-      ul.list-group
+      div.list-group
         for video in videos
-          li.list-group-item(data-id=video.id) #{video.title}
+          a.list-group-item(href='/video/' + video.id) #{video.title}
