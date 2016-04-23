@@ -25,8 +25,6 @@ app.use('/search', search)
 app.use('/playlist', playlist)
 app.use('/courses', playlists)
 
-app.listen(3000, () => {
-  console.log('Example app listening at http://localhost:3000')
-})
+app.listen(80, () => {})
 
 module.exports = app
