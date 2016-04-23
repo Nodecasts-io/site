@@ -19,7 +19,7 @@ router.post('/', (req, res) => {
     videos.items.map((video) => {
       vids.push({
         title: video.snippet.title,
-        id: video.id
+        id: video.id.videoId
       })
     })
 
