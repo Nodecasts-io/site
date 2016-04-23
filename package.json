@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "eslint": "^2.7.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^1.5.3"
   }
 }
