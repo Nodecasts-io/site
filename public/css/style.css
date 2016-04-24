@@ -118,3 +118,24 @@ img {
 #mce-EMAIL {
   height: 60px;
 }
+
+.mailchimp-button {
+  width: 50px;
+  float: left;
+}
+
+.mailchimp-input input[type="email"] {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.mailchimp-input {
+  width: calc(100% - 50px);
+  float: left;
+}
+
+.mailchimp-button input[type="submit"] {
+  height: 60px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
