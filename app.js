@@ -25,6 +25,6 @@ app.use('/search', search)
 app.use('/playlist', playlist)
 app.use('/courses', playlists)
 
-app.listen(80, () => {})
+app.listen(3000, () => {})
 
 module.exports = app
