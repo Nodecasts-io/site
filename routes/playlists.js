@@ -17,7 +17,9 @@ router.get('/', (req, res) => {
     videos.items.map((video) => {
       vids.push({
         title: video.snippet.title,
-        id: video.id.playlistId
+        id: video.id.playlistId,
+        description: video.snippet.description,
+        thumbnail: video.snippet.thumbnails.high.url
       })
     })
 
