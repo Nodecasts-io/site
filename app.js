@@ -1,6 +1,7 @@
 const express     = require('express')
 const compression = require('compression')
 const bodyParser  = require('body-parser')
+const favicon     = require('serve-favicon')
 const routes      = require('./routes/index')
 const search      = require('./routes/search')
 const video       = require('./routes/video')
@@ -14,6 +15,7 @@ app.use(compression())
 app.use(express.static('public'))
 app.set('view engine', 'pug')
 
+app.use(favicon(__dirname + '/public/img/favicon.png'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
