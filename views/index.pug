@@ -1,49 +1,50 @@
 extends ./layout.pug
 
 block content
-  div.row.Header
-    div.col-sm-6.col-sm-offset-3.Header-content
-      h1 Nodecasts. Level up.
+  div.container-fluid
+    div.row.Header
+      div.col-sm-6.col-sm-offset-3.Header-content
+        h1 Nodecasts. Level up.
 
-      p Premium quality screencasts, updated weekly. Covering Node.js, JavaScript and Web Performance!
+        p Premium quality screencasts, updated weekly. Covering Node.js, JavaScript and Web Performance!
 
-      a.btn.btn-lg.btn-info(href="/videos")
-        i.fa.fa-video-camera(aria-hidden="true")
-        span  See all videos
-      a.btn.btn-lg.btn-success.Course(href="/courses")
-        i.fa.fa-th-list(aria-hidden="true")
-        span  Start a course
-  div.row
-    div.col-md-10.col-md-offset-1
-      div.fancy-subtitle
-        span Check out our
-      h1.fancy-title Featured Series
-      div.row
-        for entry in playlists
-          div.col-md-3
-            div.thumbnail
-              a(href="/playlist/" + entry.id)
-                img(src=entry.thumbnail)
-              div.caption
+        a.btn.btn-lg.btn-info(href="/videos")
+          i.fa.fa-video-camera(aria-hidden="true")
+          span  See all videos
+        a.btn.btn-lg.btn-success.Course(href="/courses")
+          i.fa.fa-th-list(aria-hidden="true")
+          span  Start a course
+    div.row
+      div.col-md-10.col-md-offset-1
+        div.fancy-subtitle
+          span Check out our
+        h1.fancy-title Featured Series
+        div.row
+          for entry in playlists
+            div.col-md-3
+              div.thumbnail
                 a(href="/playlist/" + entry.id)
-                  h5 #{entry.title}
-                p #{entry.count} videos
+                  img(src=entry.thumbnail)
+                div.caption
+                  a(href="/playlist/" + entry.id)
+                    h5 #{entry.title}
+                  p #{entry.count} videos
 
-      div.row
-        div.col-md-10.col-md-offset-1
-          div.fancy-subtitle
-            span Check out our
-          h1.fancy-title Featured Videos
-          div.row
-            for video in videos
-              div.col-md-3
-                div.thumbnail
-                  a(href="/video/" + video.id)
-                    img(src=video.thumbnail)
-                  div.caption
+        div.row
+          div.col-md-10.col-md-offset-1
+            div.fancy-subtitle
+              span Check out our
+            h1.fancy-title Featured Videos
+            div.row
+              for video in videos
+                div.col-md-3
+                  div.thumbnail
                     a(href="/video/" + video.id)
-                      h5.caption-subtitle #{video.title}
+                      img(src=video.thumbnail)
+                    div.caption
+                      a(href="/video/" + video.id)
+                        h5.caption-subtitle #{video.title}
 
-  div.row.Email
-    div.col-md-8.col-md-offset-2
-      include includes/mailchimp.html
+    div.row.Email
+      div.col-md-8.col-md-offset-2
+        include includes/mailchimp.html

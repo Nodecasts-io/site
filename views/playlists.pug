@@ -2,17 +2,18 @@ extends ./layout.pug
 
 block content
   include ./includes/navbar.pug
-  div.row
-    div.col-md-8.col-md-offset-2.Course
-      h1 All Courses
+  div.container-fluid
+    div.row
+      div.col-md-8.col-md-offset-2.Course
+        h1 All Courses
 
-      div.row
-      each video, index in videos
-        div.col-md-6
-          div.thumbnail
-            a(href='/playlist/' + video.id)
-              img(src=video.thumbnail, alt="...")
-            div.caption
+        div.row
+        each video, index in videos
+          div.col-md-6
+            div.thumbnail
               a(href='/playlist/' + video.id)
-                h3= video.title
-              p= video.description
+                img(src=video.thumbnail, alt="...")
+              div.caption
+                a(href='/playlist/' + video.id)
+                  h3= video.title
+                p= video.description

@@ -2,10 +2,11 @@ extends ./layout.pug
 
 block content
   include ./includes/navbar.pug
-  div.row
-    div.col-md-8.col-md-offset-2.Video
-      h1 All Videos
+  div.container-fluid
+    div.row
+      div.col-md-8.col-md-offset-2.Video
+        h1 All Videos
 
-      div.list-group.Playlist
-        for video in videos
-          a.list-group-item(href='/video/' + video.id) #{video.title}
+        div.list-group.Playlist
+          for video in videos
+            a.list-group-item(href='/video/' + video.id) #{video.title}

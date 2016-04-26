@@ -2,24 +2,25 @@ extends ./layout.pug
 
 block content
   include ./includes/navbar.pug
-  div.row
-    div.col-md-10.col-md-offset-1.Video
-      for video in videos
-        h1= video.title
-        h2= video.description
-        div!= video.video
-        
-        div#disqus_thread
-        script(type="text/javascript").
-          var disqus_config = function () {
-            this.page.url = 'https://nodecasts.io'
-            this.page.identifier=!{JSON.stringify(identifier)}
-          };
-          (function() { // DON'T EDIT BELOW THIS LINE
-          var d = document, s = d.createElement('script');
+  div.container-fluid
+    div.row
+      div.col-md-10.col-md-offset-1.Video
+        for video in videos
+          h1= video.title
+          h2= video.description
+          div!= video.video
 
-          s.src = '//nodecastsio.disqus.com/embed.js';
+          div#disqus_thread
+          script(type="text/javascript").
+            var disqus_config = function () {
+              this.page.url = 'https://nodecasts.io'
+              this.page.identifier=!{JSON.stringify(identifier)}
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
 
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-          })();
+            s.src = '//nodecastsio.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();

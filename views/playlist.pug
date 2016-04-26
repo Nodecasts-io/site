@@ -2,13 +2,14 @@ extends ./layout.pug
 
 block content
   include ./includes/navbar.pug
-  div.row
-    div.col-md-8.col-md-offset-2.Video
-      h1= message
-      h3= description
-      
-      div#Player!= player
+  div.container-fluid
+    div.row
+      div.col-md-8.col-md-offset-2.Video
+        h1= message
+        h3= description
 
-      ul.list-group.Playlist
-        for video in videos
-          li.list-group-item.Playlist-Video(data-id=video.id) #{video.title}
+        div#Player!= player
+
+        ul.list-group.Playlist
+          for video in videos
+            li.list-group-item.Playlist-Video(data-id=video.id) #{video.title}

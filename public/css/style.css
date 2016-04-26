@@ -178,6 +178,11 @@ img {
   background: #EB1A22;
 }
 
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  background-color: #03A9F4;
+  border-color: #0288D1;
+}
+
 @media (min-width: 900px) {
   .Header {
     background: url('/img/background.jpg') no-repeat;
