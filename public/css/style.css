@@ -176,7 +176,8 @@ img {
   background-color: #F44336 !important;
 }
 
-.Footer-One {
+.list-group {
+  font-size: 20px;
 }
 
 .Footer-Two {
