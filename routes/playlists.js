@@ -9,11 +9,10 @@ router.get('/', (req, res) => {
 
   const config = Object.assign({
     part: 'snippet',
-    maxResults: 50,
-    type: 'playlist'
+    maxResults: 50
   }, defaultConfig)
 
-  youtube.search.list(config, (err, videos) => {
+  youtube.playlists.list(config, (err, videos) => {
     videos.items.map((video) => {
       vids.push({
         title: video.snippet.title,
