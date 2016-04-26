@@ -40,7 +40,7 @@ router.get('/:id', (req, res) => {
         player = vids.items[0].player.embedHtml
         vids.items.map((item) => {
           videos.push({
-            id: item.contentDetails.videoId,
+            id: item.id,
             title: item.snippet.title,
             duration: moment.duration(item.contentDetails.duration).humanize(),
             description: item.snippet.description
