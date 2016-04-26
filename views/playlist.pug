@@ -16,3 +16,4 @@ block content
         ul.list-group.Playlist
           for video in videos
             li.list-group-item.Playlist-Video(data-id=video.id) #{video.title}
+              span.badge= video.duration

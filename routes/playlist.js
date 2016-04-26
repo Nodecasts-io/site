@@ -2,10 +2,12 @@ const express       = require('express')
 const google        = require('googleapis')
 const router        = express.Router()
 const youtube       = google.youtube('v3')
+const moment        = require('moment')
 const defaultConfig = require('../config')
 
 router.get('/:id', (req, res) => {
   const videos = []
+  const ids = []
   var title, description, player
 
   // Get config object ready for this request
@@ -25,22 +27,24 @@ router.get('/:id', (req, res) => {
 
     youtube.playlistItems.list(config, (err, playlist) => {
       playlist.items.map((item) => {
-        videos.push({
-          id: item.contentDetails.videoId,
-          title: item.snippet.title,
-          description: item.snippet.description
-        })
+        ids.push(item.contentDetails.videoId)
       })
 
       // Get config object ready for this request
       config = Object.assign({
-        id: videos[0].id,
-        part: 'player'
+        id: ids.join(', '),
+        part: 'snippet,player,contentDetails'
       }, defaultConfig)
 
       youtube.videos.list(config, (err, vids) => {
-        player = vids.items.map((video) => {
-          return video.player.embedHtml
+        player = vids.items[0].player.embedHtml
+        vids.items.map((item) => {
+          videos.push({
+            id: item.contentDetails.videoId,
+            title: item.snippet.title,
+            duration: moment.duration(item.contentDetails.duration).humanize(),
+            description: item.snippet.description
+          })
         })
 
         res.render('playlist', {
