@@ -135,6 +135,12 @@ img {
   height: 60px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  left: -1px;
+  position: relative;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  background: #F44336;
 }
 
 .Footer-One {
