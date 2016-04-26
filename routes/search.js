@@ -8,6 +8,10 @@ router.post('/', (req, res) => {
   const vids = []
   const query = req.body.query
 
+  if (!query) {
+    res.redirect('/videos')
+  }
+
   const config = Object.assign({
     part: 'snippet',
     maxResults: 50,

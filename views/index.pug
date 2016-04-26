@@ -1,19 +1,18 @@
 extends ./layout.pug
 
 block content
-  header.Header
-    div.row
-      div.col-sm-6.col-sm-offset-3.Header-content
-        h1 Nodecasts. Level up.
+  div.row.Header
+    div.col-sm-6.col-sm-offset-3.Header-content
+      h1 Nodecasts. Level up.
 
-        p Premium quality screencasts, updated weekly. Covering Node.js, JavaScript and Web Performance!
+      p Premium quality screencasts, updated weekly. Covering Node.js, JavaScript and Web Performance!
 
-        a.btn.btn-lg.btn-info(href="/videos")
-          i.fa.fa-video-camera(aria-hidden="true")
-          span  See all videos
-        a.btn.btn-lg.btn-success.Course(href="/courses")
-          i.fa.fa-th-list(aria-hidden="true")
-          span  Start a course
+      a.btn.btn-lg.btn-info(href="/videos")
+        i.fa.fa-video-camera(aria-hidden="true")
+        span  See all videos
+      a.btn.btn-lg.btn-success.Course(href="/courses")
+        i.fa.fa-th-list(aria-hidden="true")
+        span  Start a course
   div.row
     div.col-md-10.col-md-offset-1
       div.fancy-subtitle

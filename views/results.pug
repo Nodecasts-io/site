@@ -4,8 +4,9 @@ block content
   include ./includes/navbar.pug
   div.row
     div.col-md-8.col-md-offset-2.Video
-      h1 Results for
+      h1 Results for '
         span= query
+        span '
 
       div.list-group
         for video in videos
