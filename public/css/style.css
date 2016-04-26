@@ -40,11 +40,7 @@ img {
   background: url('/img/background-small.jpg') no-repeat;
   background-size: cover;
   color: #FFF;
-  height: 500px;
-}
-
-.Header-content {
-  margin-top: 129px;
+  height: 420px;
 }
 
 .Header .navbar-default .navbar-brand {
@@ -68,6 +64,10 @@ img {
 
 .Header .Course {
   margin: 0 20px;
+}
+
+.Description {
+  font-size: 20px;
 }
 
 .fancy-title, .fancy-subtitle {
@@ -223,5 +223,10 @@ img {
   .Header {
     background: url('/img/background.jpg') no-repeat;
     background-size: cover;
+    height: 500px;
+  }
+
+  .Header-content {
+    margin-top: 129px;
   }
 }

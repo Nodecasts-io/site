@@ -7,7 +7,7 @@ block content
       div.col-md-10.col-md-offset-1.Video
         for video in videos
           h1= video.title
-          h2= video.description
+          p.Description= video.description
           div!= video.video
 
           div#disqus_thread
