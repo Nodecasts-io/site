@@ -139,7 +139,7 @@ img {
   color: #333;
   text-align: center;
   font-size: 20px;
-  padding-top: 75px;
+  padding-top: 40px;
 }
 
 .About h2 {
@@ -259,5 +259,9 @@ img {
 
   .Header-content {
     margin-top: 129px;
+  }
+
+  .About {
+    padding-top: 75px;
   }
 }
