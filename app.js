@@ -1,6 +1,3 @@
-const fs          = require('fs')
-const http        = require('http')
-const https       = require('https')
 const express     = require('express')
 const compression = require('compression')
 const bodyParser  = require('body-parser')
@@ -30,15 +27,8 @@ app.use('/search', search)
 app.use('/playlist', playlist)
 app.use('/courses', playlists)
 
-if (process.env.NODE_ENV === 'production') {
-  const ssl = {
-    key: fs.readFileSync('/etc/letsencrypt/live/nodecasts.io/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/nodecasts.io/fullchain.pem'),
-    ca: fs.readFileSync('/etc/letsencrypt/live/nodecasts.io/chain.pem')
-  }
-  https.createServer(ssl, app).listen(process.env.PORT || 8443);
-}
-
-http.createServer(app).listen(process.env.PORT || 3000);
+app.listen(3000, () => {
+  console.log('Application running on http://localhost:3000')
+})
 
 module.exports = app
