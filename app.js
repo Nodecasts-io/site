@@ -12,7 +12,7 @@ const app         = express()
 
 // Middleware
 app.use(compression())
-app.use(express.static('public'))
+app.use(express.static('public', { maxAge: 31557600 }))
 app.set('view engine', 'pug')
 
 app.use(favicon(__dirname + '/public/img/favicon.png'))
