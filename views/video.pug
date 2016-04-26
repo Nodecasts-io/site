@@ -2,12 +2,15 @@ extends ./layout.pug
 
 block content
   include ./includes/navbar.pug
+  div.row.SubHeader
+    div.col-md-10.col-md-offset-1
+      for video in videos
+        h1= video.title
+        p.Description= video.description
   div.container-fluid
     div.row
       div.col-md-10.col-md-offset-1.Video
         for video in videos
-          h1= video.title
-          p.Description= video.description
           div!= video.video
 
           div#disqus_thread
