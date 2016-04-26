@@ -32,9 +32,9 @@ app.use('/courses', playlists)
 
 if (process.env.NODE_ENV === 'production') {
   const ssl = {
-    key: fs.readFileSync('/etc/letsencrypt/live/findmybusnj.com/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/findmybusnj.com/fullchain.pem'),
-    ca: fs.readFileSync('/etc/letsencrypt/live/findmybusnj.com/chain.pem')
+    key: fs.readFileSync('/etc/letsencrypt/live/nodecasts.io/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/nodecasts.io/fullchain.pem'),
+    ca: fs.readFileSync('/etc/letsencrypt/live/nodecasts.io/chain.pem')
   }
   https.createServer(ssl, app).listen(process.env.PORT || 8443);
 }
