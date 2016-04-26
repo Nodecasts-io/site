@@ -3,6 +3,14 @@ body {
   background: #EEE;
 }
 
+body a {
+  color: #2196F3;
+}
+
+body a:focus, body a:hover {
+  color: #23527c;
+}
+
 h1, h2, h3, h4, h5 {
   font-weight: 900;
 }
@@ -188,6 +196,10 @@ img {
   text-align: center;
   color: white;
   margin-right: 5px;
+}
+
+.Social a:hover, .Social a:focus {
+  color: #EEE;
 }
 
 .Facebook {
