@@ -3,15 +3,10 @@ const google        = require('googleapis')
 const router        = express.Router()
 const youtube       = google.youtube('v3')
 const defaultConfig = require('../config')
-const featured      = require('../data/featured_playlists.js')
 
 router.get('/:id', (req, res) => {
   const videos = []
   var title, description, player
-
-  if (featured.indexOf(req.params.id) == -1) {
-    return 'Error'
-  }
 
   // Get config object ready for this request
   var config = Object.assign({
