@@ -22,14 +22,14 @@ router.get('/', (req, res) => {
         return (featuredPlaylists.indexOf(item.id) != -1)
       })
       .forEach((item) => {
-      playlists.push({
-        id: item.id,
-        title: item.snippet.localized.title,
-        description: item.snippet.localized.description,
-        count: item.contentDetails.itemCount,
-        thumbnail: item.snippet.thumbnails.standard.url
+        playlists.push({
+          id: item.id,
+          title: item.snippet.localized.title,
+          description: item.snippet.localized.description,
+          count: item.contentDetails.itemCount,
+          thumbnail: item.snippet.thumbnails.standard.url
+        })
       })
-    })
 
     config = Object.assign({
       part: 'snippet,contentDetails',
