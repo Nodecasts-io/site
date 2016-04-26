@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
   const config = Object.assign({
     part: 'snippet',
     maxResults: 50,
+    order: 'viewCount',
     type: 'video'
   }, defaultConfig)
 
