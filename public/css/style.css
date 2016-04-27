@@ -70,6 +70,10 @@ img {
   margin: 0 20px;
 }
 
+.Header-content .btn i {
+  width: 15px;
+}
+
 .SubHeader {
   background: #673AB7;
   color: #FFF;
