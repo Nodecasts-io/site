@@ -7,6 +7,6 @@ block content
       div.col-md-8.col-md-offset-2.Video
         h1 All Videos
 
-        div.list-group.Playlist
+        div.list-group
           for video in videos
             a.list-group-item(href='/video/' + video.id) #{video.title}
