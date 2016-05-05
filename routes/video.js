@@ -36,11 +36,12 @@ router.get('/getPlayer/:id', (req, res) => {
 
   const config = Object.assign({
     id: req.params.id,
-    part: 'player'
+    part: 'player,snippet'
   }, defaultConfig)
 
   youtube.videos.list(config, (err, videos) => {
     res.send(JSON.stringify({
+      title: videos.items[0].snippet.localized.title,
       video: videos.items[0].player.embedHtml
     }))
   })

@@ -39,7 +39,9 @@ $('.Playlist-Video').on('click', function(e) {
   $(this).addClass('active')
 
   $.get(videoUrl, function(data) {
-    $('#Player').html(JSON.parse(data).video)
+    var video = JSON.parse(data)
+    document.title = video.title
+    $('#Player').html(video.video)
     dynamicVideo()
   })
 })
