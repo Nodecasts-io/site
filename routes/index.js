@@ -48,7 +48,7 @@ router.get('/', (req, res) => {
         })
 
         res.render('index', {
-          title: 'Nodecasts',
+          title: 'Nodecasts, Premium Node.js Screencasts',
           playlists: playlists,
           videos: videos
         })

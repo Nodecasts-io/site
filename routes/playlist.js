@@ -48,7 +48,7 @@ router.get('/:id', (req, res) => {
         })
 
         res.render('playlist', {
-          title: 'Nodecasts',
+          title: 'Nodecasts ' + title,
           message: title,
           videos: videos,
           description: description,

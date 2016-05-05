@@ -6,6 +6,7 @@ const defaultConfig  = require('../config')
 
 router.get('/:id', (req, res) => {
   const vids = []
+  var videoTitle
 
   const config = Object.assign({
     id: req.params.id,
@@ -14,6 +15,8 @@ router.get('/:id', (req, res) => {
 
   youtube.videos.list(config, (err, videos) => {
     videos.items.map((video) => {
+      videoTitle = video.snippet.title
+
       vids.push({
         title: video.snippet.title,
         description: video.snippet.description,
@@ -22,7 +25,7 @@ router.get('/:id', (req, res) => {
     })
 
     res.render('video', {
-      title: 'Nodecasts',
+      title: 'Nodecasts ' + videoTitle,
       identifier: req.params.id,
       videos: vids
     })

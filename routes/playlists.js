@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
     })
 
     res.render('playlists', {
-      title: 'Nodecasts',
+      title: 'Nodecasts, All Courses',
       videos: vids
     })
   })
