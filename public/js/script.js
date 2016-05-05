@@ -30,12 +30,29 @@ $('.Playlist').find('.list-group-item').first().addClass('active')
 $('.Playlist-Video').on('click', function(e) {
   e.preventDefault()
 
+  const videoUrl = '/video/getPlayer/' + $(this).data('id')
+
+  markLinkAsVisited('/video/' + $(this).data('id'))
+
   $('.Playlist').find('.active').removeClass('active')
 
   $(this).addClass('active')
 
-  $.get('/video/getPlayer/' + $(this).data('id'), function(data) {
+  $.get(videoUrl, function(data) {
     $('#Player').html(JSON.parse(data).video)
     dynamicVideo()
   })
 })
+
+function markLinkAsVisited(videoUrl) {
+  const fullUrl = window.location.origin + videoUrl;
+
+  // store the current URL
+  const current_url = window.location.href
+
+  // use replaceState to push a new entry into the browser's history
+  window.history.replaceState({}, "", fullUrl)
+
+  // use replaceState again to reset the URL
+  window.history.replaceState({}, "", current_url)
+}

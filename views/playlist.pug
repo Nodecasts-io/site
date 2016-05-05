@@ -13,7 +13,7 @@ block content
 
         div#Player!= player
 
-        ul.list-group.Playlist
+        div.list-group.Playlist
           for video in videos
-            li.list-group-item.Playlist-Video(data-id=video.id) #{video.title}
+            a.list-group-item.Playlist-Video(data-id=video.id, href="/video/" + video.id) #{video.title}
               span.badge= video.duration
