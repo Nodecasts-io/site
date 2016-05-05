@@ -15,7 +15,7 @@ block content
           i.fa.fa-th-list(aria-hidden="true")
           span  Start a course
     div.row
-      div.col-md-10.col-md-offset-1
+      div.col-md-12
         div.fancy-subtitle
           span Check out our
         h1.fancy-title Featured Series
@@ -31,13 +31,13 @@ block content
                   span.badge #{entry.count} videos
 
         div.row
-          div.col-md-10.col-md-offset-1
+          div.col-md-12
             div.fancy-subtitle
               span Check out our
             h1.fancy-title Featured Videos
             div.row
               for video in videos
-                div.col-md-3
+                div.col-md-4.col-sm-6
                   div.thumbnail
                     a(href="/video/" + video.id)
                       img(src=video.thumbnail)
