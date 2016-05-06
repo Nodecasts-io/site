@@ -27,6 +27,7 @@ router.get('/:id', (req, res) => {
     res.render('video', {
       title: 'Nodecasts ' + videoTitle,
       identifier: req.params.id,
+      fullUrl: 'https://nodecasts.io' + req.originalUrl.split("?").shift(),
       videos: vids
     })
   })

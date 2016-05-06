@@ -12,7 +12,8 @@ block content
       div.col-md-10.col-md-offset-1.Video
 
         div#Player!= player
-
+    div.row
+      div.col-md-10.col-md-offset-1
         div.list-group.Playlist
           for video in videos
             a.list-group-item.Playlist-Video(data-id=video.id, href="/video/" + video.id) #{video.title}

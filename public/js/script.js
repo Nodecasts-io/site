@@ -39,9 +39,16 @@ $('.Playlist-Video').on('click', function(e) {
   $(this).addClass('active')
 
   $.get(videoUrl, function(data) {
+    // JSON parse data
     var video = JSON.parse(data)
+
+    // Change document title to new video title
     document.title = video.title
+
+    // Change embedded player to new video
     $('#Player').html(video.video)
+
+    // Recalculate size for video
     dynamicVideo()
   })
 })
