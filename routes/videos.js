@@ -6,11 +6,23 @@ const defaultConfig  = require('../config')
 
 router.get('/', (req, res) => {
   const vids = []
+  let order
+ 
+  switch (req.query.sortBy) {
+    case 'recent':
+      order = 'date'
+      break
+    case 'name':
+      order = 'title'
+      break
+    default:
+      order = 'viewCount'
+  }
 
   const config = Object.assign({
     part: 'snippet',
     maxResults: 50,
-    order: 'viewCount',
+    order: order,
     type: 'video'
   }, defaultConfig)
 

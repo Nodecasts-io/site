@@ -4,9 +4,19 @@ block content
   include ./includes/navbar.pug
   div.container-fluid
     div.row
-      div.col-md-8.col-md-offset-2.Video
+      div.col-md-2.col-md-offset-2
         h1 All Videos
+      div.col-md-4.col-md-offset-2
+        ul.nav.nav-pills.Video-Pills
+          li(role="presentation").active
+            a(href="/videos") Most Popular
+          li(role="presentation")
+            a(href="/videos?sortBy=recent") Most Recent
+          li(role="presentation")
+            a(href="/videos?sortBy=name") Alphabetically
 
+    div.row
+      div.col-md-8.col-md-offset-2.Video
         div.list-group
           for video in videos
             a.list-group-item(href='/video/' + video.id) #{video.title}
