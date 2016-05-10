@@ -8,11 +8,11 @@ block content
         h1 All Videos
       div.col-md-4.col-md-offset-2
         ul.nav.nav-pills.Video-Pills
-          li(role="presentation").active
+          li(role="presentation", class=activeClass === 'Video-Popular' ? 'active' : '')
             a(href="/videos") Most Popular
-          li(role="presentation")
+          li(role="presentation", class=activeClass === 'Video-Recent' ? 'active' : '')
             a(href="/videos?sortBy=recent") Most Recent
-          li(role="presentation")
+          li(role="presentation", class=activeClass === 'Video-Name' ? 'active' : '')
             a(href="/videos?sortBy=name") Alphabetically
 
     div.row

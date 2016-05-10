@@ -6,17 +6,20 @@ const defaultConfig  = require('../config')
 
 router.get('/', (req, res) => {
   const vids = []
-  let order
+  let order, active
  
   switch (req.query.sortBy) {
     case 'recent':
-      order = 'date'
+      order  = 'date'
+      active = 'Video-Recent'
       break
     case 'name':
-      order = 'title'
+      order  = 'title'
+      active = 'Video-Name'
       break
     default:
-      order = 'viewCount'
+      order  = 'viewCount'
+      active = 'Video-Popular'
   }
 
   const config = Object.assign({
@@ -36,7 +39,8 @@ router.get('/', (req, res) => {
 
     res.render('videos', {
       title: 'Nodecasts, All Videos',
-      videos: vids
+      videos: vids,
+      activeClass: active
     })
   })
 })
