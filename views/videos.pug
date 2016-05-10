@@ -20,3 +20,7 @@ block content
         div.list-group
           for video in videos
             a.list-group-item(href='/video/' + video.id) #{video.title}
+        if prevPageToken
+          a.btn.btn-lg.btn-info(href="/videos?token=" + prevPageToken) &larr; Previous
+        if nextPageToken
+          a.btn.btn-lg.btn-info(href="/videos?token=" + nextPageToken) Next &rarr;

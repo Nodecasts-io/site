@@ -6,7 +6,7 @@ const defaultConfig  = require('../config')
 
 router.get('/', (req, res) => {
   const vids = []
-  var order, active
+  var order, active, pageToken
  
   switch (req.query.sortBy) {
     case 'recent':
@@ -22,10 +22,15 @@ router.get('/', (req, res) => {
       active = 'Video-Popular'
   }
 
+  if (req.query.token) {
+    pageToken = req.query.token
+  }
+
   const config = Object.assign({
     part: 'snippet',
     maxResults: 50,
-    order: order,
+    order,
+    pageToken,
     type: 'video'
   }, defaultConfig)
 
@@ -37,9 +42,13 @@ router.get('/', (req, res) => {
       })
     })
 
+    var {nextPageToken, prevPageToken} = videos 
+
     res.render('videos', {
       title: 'Nodecasts, All Videos',
       videos: vids,
+      nextPageToken,
+      prevPageToken,
       activeClass: active
     })
   })
