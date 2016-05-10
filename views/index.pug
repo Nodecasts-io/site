@@ -15,7 +15,7 @@ block content
           i.fa.fa-th-list(aria-hidden="true")
           span  Start a course
     div.row
-      div.col-md-12
+      div.col-md-12.col-lg-10.col-lg-offset-1
         div.fancy-subtitle
           span Check out our
         h1.fancy-title Featured Series
@@ -30,20 +30,20 @@ block content
                     h5 #{entry.title}
                   span.badge #{entry.count} videos
 
+    div.row
+      div.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+        div.fancy-subtitle
+          span Check out our
+        h1.fancy-title Featured Videos
         div.row
-          div.col-md-10.col-md-offset-1
-            div.fancy-subtitle
-              span Check out our
-            h1.fancy-title Featured Videos
-            div.row
-              for video in videos
-                div.col-md-4.col-sm-6
-                  div.thumbnail
-                    a(href="/video/" + video.id)
-                      img(src=video.thumbnail)
-                    div.caption
-                      a(href="/video/" + video.id)
-                        h5.caption-subtitle #{video.title}
+          for video in videos
+            div.col-md-4.col-sm-6
+              div.thumbnail
+                a(href="/video/" + video.id)
+                  img(src=video.thumbnail)
+                div.caption
+                  a(href="/video/" + video.id)
+                    h5.caption-subtitle #{video.title}
 
     div.row.About
       div.col-md-6.col-md-offset-3
