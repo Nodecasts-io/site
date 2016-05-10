@@ -6,7 +6,7 @@ const defaultConfig  = require('../config')
 
 router.get('/', (req, res) => {
   const vids = []
-  let order, active
+  var order, active
  
   switch (req.query.sortBy) {
     case 'recent':
