@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
         playlists.push({
           id: item.id,
           title: item.snippet.localized.title,
-          description: item.snippet.localized.description,
+          description: item.snippet.localized.description.split(/\s+/).slice(0, 10).join(' ') + '...',
           count: item.contentDetails.itemCount,
           thumbnail: item.snippet.thumbnails.standard.url
         })

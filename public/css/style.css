@@ -4,11 +4,11 @@ body {
 }
 
 body a {
-  color: #2196F3;
+  color: #546E7A;
 }
 
 body a:focus, body a:hover {
-  color: #23527c;
+  color: #546E7A;
 }
 
 body .badge {
@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5 {
 
 img {
   max-width: 100%;
+}
+
+.col-xs-15 {
+  width:20%;
 }
 
 .list-group-item.active,
@@ -172,6 +176,14 @@ a.list-group-item:visited {
 .Playlist-Video:not(.active):hover {
   background: #EEE;
   color: #333;
+}
+
+.thumbnail {
+  padding: 0 !important;
+}
+
+.thumbnail .caption {
+  min-height: 70px;
 }
 
 .caption-subtitle {
