@@ -23,10 +23,6 @@ img {
   max-width: 100%;
 }
 
-.col-xs-15 {
-  width:20%;
-}
-
 .list-group-item.active,
 .list-group-item.active:focus,
 .list-group-item.active:hover {
@@ -293,5 +289,9 @@ a.list-group-item:visited {
 
   .Video-Pills {
     margin-top: 15px;
+  }
+
+  .col-xs-15 {
+    width:20%;
   }
 }
