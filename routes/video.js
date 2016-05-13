@@ -25,9 +25,10 @@ router.get('/:id', (req, res) => {
     })
 
     res.render('video', {
-      title: 'Nodecasts ' + videoTitle,
+      title: 'Nodecasts ' + videoTitle + ' video',
       identifier: req.params.id,
       fullUrl: 'https://nodecasts.io' + req.originalUrl.split("?").shift(),
+      metaDescription: vids[0].description,
       videos: vids
     })
   })

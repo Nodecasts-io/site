@@ -48,7 +48,8 @@ router.get('/', (req, res) => {
         })
 
         res.render('index', {
-          title: 'Nodecasts, Premium Node.js Screencasts',
+          title: 'Nodecasts, learn Node.js with our JavaScript courses',
+          metaDescription: 'Learn Node.js easily with our free, high-quality JavaScript courses!',
           playlists: playlists,
           videos: videos
         })

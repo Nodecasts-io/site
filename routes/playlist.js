@@ -8,7 +8,7 @@ const defaultConfig = require('../config')
 router.get('/:id', (req, res) => {
   const videos = []
   const ids = []
-  var title, description, player, id
+  var title, description, player
 
   // Get config object ready for this request
   var config = Object.assign({
@@ -38,7 +38,6 @@ router.get('/:id', (req, res) => {
 
       youtube.videos.list(config, (err, vids) => {
         player = vids.items[0].player.embedHtml
-        id = vids.items[0].id
         vids.items.map((item) => {
           videos.push({
             id: item.id,
@@ -49,7 +48,8 @@ router.get('/:id', (req, res) => {
         })
 
         res.render('playlist', {
-          title: 'Nodecasts ' + title,
+          title: 'Nodecasts ' + title + ' course',
+          metaDescription: description,
           message: title,
           videos: videos,
           description: description,
