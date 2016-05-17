@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://nodecasts.io/</loc>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/videos</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/courses</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/playlist/PLVHlCYNvnqYqjnypg2Czw4vVjTL2gB7_e</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/playlist/PLVHlCYNvnqYpQXeTEA0PxH1spth-K9ey7</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/playlist/PLVHlCYNvnqYrUeBZP0pUxSFT0KYr9Xw84</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/playlist/PLVHlCYNvnqYouIVj3IgK3RmzpnWMaoqkw</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/9CyUpd73Qt0</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/S6OAj5rNr1E</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/V-txbAYtVVE</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/8UsIexAY4NY</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/0eSAsi3GPh4</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/videos?sortBy=recent</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/videos?sortBy=name</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/sfvG4pFeuQw</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/z6ihthEwXDk</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/zVavqDMmttw</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/uPKlktGFiyw</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/PVFUzNRTid4</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/thGaLbbKsW0</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/HDQAsh0Bc1E</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/KX4fnjBJQAM</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/ewMKXHu1E1Q</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/HIS8juawTmM</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/twX0Hx_mABg</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/1sHq04erG9o</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/dFUkv4IA62Q</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/2BZ6LY9LCsg</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/F0n4pN4ckdI</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/lbBZXw2hKH4</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/eAPtATp5DLg</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/FbdLa4fhgEg</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/ku_s_Aw_ms4</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/MsbNJPsjD-w</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/Ihxddhq8XeE</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/REaowJ8JSfw</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/L6_CoHNSbwc</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/N-HYF8-51tc</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/54SY00jO3u4</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/8U3ZTCtZy5Q</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/1UDfBRd51EI</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/Toie4HIgIDA</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/NYXch_bwu0k</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/ZyFOrB6VyTQ</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/UURZFzk92bU</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/8lY9u3JFr5I</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/12GHROiEQP4</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/HuQdWw8YOMo</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/Nld2oXTB50M</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/KJ3uYyUp-yo</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/ROoc5AW90pA</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/1BSrE-OUXm4</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/Gx3SGTmx7jc</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/P51O_PT7NUg</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/gf5VxYF3gkg</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/UZyReyR3x3Q</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/2UNs7ohpfPo</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/bnFudl9lCgE</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/m2aBlayg5CM</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/videos?token=CDIQAA</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/playlist/PLVHlCYNvnqYpSUXgYY1QwBx96QUH-3-l4</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/playlist/PLVHlCYNvnqYrMlqp6f1_RWl9qb6aU36HE</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/playlist/PLVHlCYNvnqYrKH6UHtv1WbRgTNqm0Am3Q</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/Rri6pxBPZLw</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/9kWezU0LBmU</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/xAcEF-uDeVw</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/sOCzK6Fm1FE</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/UwHqq89cbO4</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/Kys2IviS8Ew</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/yM1Lhgvv7D8</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/cfeUioIjEJM</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/mrMgpTNVFYc</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/MDBdzMyYHzY</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/xw_2yNxh7tg</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/-Fkzg2lyju4</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/HoEr0kg6mJY</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/LCVo1Ko5iCM</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/QjYk58e-8v4</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/dSltpdrdZ9E</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/gnlCinH4Txo</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/wTcEppiFSEg</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/_xIq-ULzdjY</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/video/DTxxA_Y1gak</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://nodecasts.io/videos?token=CDIQAQ</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+</urlset>
