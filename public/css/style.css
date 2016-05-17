@@ -1,6 +1,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background: #EEE;
+	background: #ECECEC;
 }
 
 body a {
@@ -107,34 +107,15 @@ a.list-group-item:visited {
 }
 
 .fancy-subtitle span {
-  color: #03A9F4;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 13px;
-  position: relative;
-}
-
-.fancy-subtitle span:before, .fancy-subtitle span:after {
-  content: "";
-  position: absolute;
-  border-top: 3px solid #d7d7c6;
-  width: 100px;
-  height: 3px;
-  top: 50%;
-}
-
-.fancy-subtitle span:before {
-  right: 100%;
-  margin-right: 40px;
-}
-
-.fancy-subtitle span:after {
-  left: 100%;
-  margin-left: 40px;
+	color: #B1ADAD;
+	text-transform: uppercase;
+	font-size: 12px;
+	position: relative;
+	letter-spacing: 1px;
 }
 
 .Email {
-  background: url('/img/background2.jpg');
+  background: url('/img/background.jpg') 100% 60%;
   background-size: cover;
   color: #FFF;
   height: 300px;
@@ -176,6 +157,7 @@ a.list-group-item:visited {
 
 .thumbnail {
   padding: 0 !important;
+	border: 1px solid #F2F2F2 !important;
 }
 
 .thumbnail .caption {
