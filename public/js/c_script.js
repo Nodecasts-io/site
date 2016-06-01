@@ -65,3 +65,11 @@ function markLinkAsVisited(videoUrl) {
   // use replaceState again to reset the URL
   window.history.replaceState({}, "", current_url)
 }
+
+$( document ).ready(function() {
+  $("img[data-src]").each(function() {
+    $(this).attr("src", function() {
+      return $(this).attr("data-src")
+    })
+  })
+})

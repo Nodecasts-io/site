@@ -23,7 +23,7 @@ block content
             div.col-md-3.col-xs-12
               div.thumbnail
                 a(href="/playlist/" + entry.id)
-                  img(src=entry.thumbnail)
+                  img(data-src=entry.thumbnail)
                 div.caption
                   a(href="/playlist/" + entry.id)
                     h4 #{entry.title}
@@ -40,7 +40,7 @@ block content
             div.col-md-2.col-sm-6.col-xs-15
               div.thumbnail
                 a(href="/video/" + video.id)
-                  img(src=video.thumbnail)
+                  img(data-src=video.thumbnail)
                 div.caption
                   a(href="/video/" + video.id)
                     h5 #{video.title}
