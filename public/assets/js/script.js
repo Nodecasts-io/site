@@ -1,3 +1,5 @@
+var $ = require('jquery')
+
 function dynamicVideo() {
   // Find all YouTube videos
   var $allVideos = $("iframe[src^='//www.youtube.com']"), $fluidEl = $(".Video")
